@@ -57,7 +57,7 @@ a {
   text-decoration: none;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -69,7 +69,7 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 img {
   display: block;
@@ -407,7 +407,7 @@ input::placeholder {
 
 .work__item {
   padding-top: 34px;
-
+  padding-bottom: 24px;
   border: none;
   background-color: var(--disactive-bg-color);
   border-radius: 10px;
@@ -445,6 +445,23 @@ input::placeholder {
   color: var(--white-text);
   transform: var(--transition-function);
 }
+.work__item:hover .work_btn,
+.work__item:focus .work_btn {
+  background-color: #9f3919;
+  color: var(--white-text);
+  /* box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.32); */
+  /* transition: var(--transition-function); */
+}
+
+.work__item:hover .work__name,
+.work__item:focus .work__name {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.work__item:hover .work__text,
+.work__item:focus .work__text {
+  color: var(--white-text);
+}
 
 /* .work__card {
   padding-bottom: 34px;
@@ -460,11 +477,12 @@ input::placeholder {
 }
 
 .date {
+  font-family: "DM Sans";
   font-weight: 700;
   font-size: 28px;
   line-height: 56px;
   text-align: center;
-  letter-spacing: -1.034;
+  letter-spacing: -1.03;
 }
 .work__name {
   margin-bottom: 22px;
@@ -494,15 +512,16 @@ input::placeholder {
   font-size: 60px;
   line-height: 56px;
   text-align: center;
-  letter-spacing: -1.03448px;
+  letter-spacing: -1.03px;
+  color: var(--second-text);
 }
 
 .work__paragraph {
   margin-bottom: 36px;
   /* height: 150px;
-    left: 32.12%;
-    right: 32.12%;
-    top: calc(50% - 150px/2 + 22.5px); */
+  left: 32.12%;
+  right: 32.12%;
+  top: calc(50% - 150px / 2 + 22.5px); */
 
   font-family: "Mulish";
   font-style: normal;
@@ -526,11 +545,12 @@ input::placeholder {
   background-color: var(--white-text);
   border: none;
   color: var(--accent-text);
+  margin: 0 auto;
+  display: block;
 }
-.work_btn:hover,
+/* .work_btn:hover,
 .work_btn:focus {
   background-color: #9f3919;
   color: var(--white-text);
-  /* box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.32); */
   transition: var(--transition-function);
-}
+} */
