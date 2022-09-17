@@ -163,15 +163,13 @@ img {
   line-height: 22px;
   font-weight: 700;
   cursor: pointer;
-  /* background: transparent; */
   border-radius: 10px;
   background-color: var(--accent-text);
-  border-color: var(--accent-text);
+  border: none;
   color: var(--white-text);
 }
 .button:hover,
 .button:focus {
-  /* color: var(--second-text); */
   box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.32);
   transition: var(--transition-function);
 }
@@ -189,10 +187,24 @@ img {
 }
 
 .hero__btn {
-  background-color: transparent;
+  background-color: var(--white-text);
   border-color: var(--accent-text);
   color: var(--accent-text);
   margin-left: 36px;
+
+  width: 214px;
+  height: 60px;
+  font-family: DM Sans;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.hero__btn:hover,
+.hero__btn:focus {
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.32);
+  transition: var(--transition-function);
 }
 
 /* .hero__btn:hover,
