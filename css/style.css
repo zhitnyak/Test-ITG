@@ -124,6 +124,11 @@ img {
     display: none;
   }
 }
+.logo__icon {
+  fill: #2a2a2a;
+  width: 140px;
+  height: 78px;
+}
 
 .menu {
   display: flex;
