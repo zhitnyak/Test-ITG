@@ -140,6 +140,8 @@ img {
 .menu__item {
   color: var(--main-text);
 
+  font-family: "DM Sans";
+  font-weight: 700;
   font-size: 15px;
   line-height: 20px;
   font-weight: 700;
@@ -559,3 +561,12 @@ input::placeholder {
   color: var(--white-text);
   transition: var(--transition-function);
 } */
+.footer__container {
+  display: flex;
+  /* height: 145px; */
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 36px;
+  padding-bottom: 31px;
+  background-color: #ccd7ff;
+}
