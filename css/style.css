@@ -176,25 +176,26 @@ img {
 .hero__container {
   padding-top: 104px;
   padding-bottom: 117px;
-  background-image: url("../img/pose.png"), url("../img/stand.png"),
-    url("../img/bubble.png");
+  /* background-image: url("../img/hero.png");
   background-repeat: no-repeat;
-  background-position: 767px 104px, 812px 198px, 1075px 446px;
+  background-position: 767px 104px; */
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1439px) {
   .hero__container {
-    padding-top: 74px;
-    padding-bottom: 87px;
-    background-image: url("../img/pose.png"), url("../img/stand.png"),
-      url("../img/bubble.png");
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-image: url("../img/hero_2.png");
     background-repeat: no-repeat;
-    background-position: 767px 104px, 812px 198px, 1075px 446px;
+    background-position: 50% 50%; */
   }
 }
 
 .hero__title {
-  margin: 30px 0 30px;
+  margin: 0 0 30px;
   font-size: 80px;
   line-height: 77px;
   letter-spacing: -2.5px;
@@ -202,7 +203,6 @@ img {
 
 @media screen and (max-width: 1439px) {
   .hero__title {
-    margin: 15px 0 15px;
     font-size: 60px;
     line-height: 60px;
     letter-spacing: -2.5px;
@@ -239,15 +239,30 @@ img {
   cursor: pointer;
   border-radius: 10px;
 }
+@media screen and (max-width: 1439px) {
+  .hero__btn {
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+
 .hero__btn:hover,
 .hero__btn:focus {
   box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.32);
   transition: var(--transition-function);
 }
-
 .hero__set {
   max-width: 468px;
   justify-content: left;
+}
+@media screen and (max-width: 1439px) {
+  .hero__set {
+    align-items: center;
+    max-width: 320px;
+    line-height: 23px;
+    margin-bottom: 30px;
+  }
 }
 
 .form__container {
