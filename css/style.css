@@ -324,16 +324,19 @@ input::placeholder {
 .work__item:focus .work_btn {
   background-color: #9f3919;
   color: var(--white-text);
+  transition: var(--transition-function);
 }
 
 .work__item:hover .work__name,
 .work__item:focus .work__name {
   color: rgba(255, 255, 255, 0.7);
+  transition: var(--transition-function);
 }
 
 .work__item:hover .work__text,
 .work__item:focus .work__text {
   color: var(--white-text);
+  transition: var(--transition-function);
 }
 
 @media screen and (max-width: 1439px) {
