@@ -1,64 +1,4 @@
-:root {
-  --main-text: #696871;
-  --second-text: #19191b;
-  --accent-text: #5454d4;
-  --white-text: #ffffff;
-  --main-bg-color: #ffffff;
-  --second-bg-color: rgba(67, 108, 255, 0.27);
-  --accenr-bg-color: #5454d4;
-  --disactive-bg-color: #f8f8f8;
-  --active-bg-color: #ff7143;
-  --transition-function: 250ms;
-  --flexmobile: 320px;
-  --mobile: 480px;
-  --desktop: 1440px;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  color: var(--main-text);
-  margin: 0;
-}
-
-h1,
-h2,
-h3 {
-  font-family: DM Sans;
-  font-weight: 700;
-  margin: 0;
-  color: var(--second-text);
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-  font-family: Mulish;
-  font-weight: 400;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+@import './common.css';
 
 .container {
   width: 1440px;
@@ -94,16 +34,9 @@ img {
   }
 }
 
-/* @media screen and (min-width: 1440px) {
-  .header__title {
-    max-width: 1440px;
-  }
-} */
-
 @media screen and (max-width: 1439px) {
   .header__logo {
     width: 85px;
-    /* height: 39px; */
   }
 }
 
@@ -126,7 +59,7 @@ img {
 .menu__item {
   color: var(--main-text);
 
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 700;
   font-size: 15px;
   line-height: 20px;
@@ -188,9 +121,6 @@ img {
     display: block;
     padding-top: 20px;
     padding-bottom: 60px;
-    /* background-image: url("../img/hero_2.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%; */
   }
 }
 
@@ -276,20 +206,10 @@ img {
 
 @media screen and (max-width: 1439px) {
   .form__container {
-    /* display: flex; */
     flex-flow: wrap;
-
-    /* padding-top: 20px; */
     padding-bottom: 60px;
-    /* background-image: url("../img/hero_2.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%; */
   }
 }
-
-/* .form__img {
-  order: 1;
-} */
 
 @media screen and (max-width: 1439px) {
   .form__img {
@@ -344,7 +264,7 @@ img {
 
 input::placeholder {
   color: #000000;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 700;
   font-size: 17px;
   line-height: 22px;
@@ -363,12 +283,7 @@ input::placeholder {
 
 @media screen and (max-width: 1439px) {
   .work__container {
-    /* display: block;
-    padding-top: 20px; */
     padding-bottom: 40px;
-    /* background-image: url("../img/hero_2.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%; */
   }
 }
 
@@ -394,8 +309,6 @@ input::placeholder {
   background-color: var(--disactive-bg-color);
   border-radius: 10px;
   max-height: 441px;
-  /* top: 0;
-    left: 0; */
   flex-basis: calc(100% / 3 - 40px);
   margin-top: 40px;
   margin-left: 40px;
@@ -425,7 +338,6 @@ input::placeholder {
 
 @media screen and (max-width: 1439px) {
   .work__item {
-    /* max-width: 300; */
     padding-top: 34px;
     padding-bottom: 24px;
     border: none;
@@ -433,11 +345,6 @@ input::placeholder {
     border-radius: 10px;
     max-height: 441px;
     margin: 0 0 20px 0;
-    /* top: 0;
-    left: 0; */
-    /* flex-basis: calc(100% / 3 - 40px);
-  margin-top: 40px;
-  margin-left: 40px; */
   }
 }
 @media screen and (max-width: 1439px) {
@@ -457,7 +364,6 @@ input::placeholder {
 
 @media screen and (max-width: 1439px) {
   .work__title {
-    /* max-width: 504px; */
     margin-bottom: 30px;
     font-size: 50px;
     line-height: 50px;
@@ -466,12 +372,11 @@ input::placeholder {
 }
 
 .date {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 700;
   font-size: 28px;
   line-height: 56px;
   text-align: center;
-  letter-spacing: -1.03;
 }
 .work__name {
   margin-bottom: 22px;
@@ -479,7 +384,6 @@ input::placeholder {
   font-size: 18px;
   line-height: 28px;
   text-align: center;
-  letter-spacing: -0.56;
 }
 
 .work__text {
@@ -504,7 +408,7 @@ input::placeholder {
 .work__paragraph {
   margin-bottom: 36px;
 
-  font-family: "Mulish";
+  font-family: 'Mulish';
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
